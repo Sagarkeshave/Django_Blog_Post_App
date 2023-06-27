@@ -118,6 +118,9 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+STATICFILES_DIRS = os.path.join(BASE_DIR, "static"),
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
+
 MEDIA_ROOT = os.path.join(BASE_DIR,"media")
 MEDIA_URL = "/media/"
 
@@ -140,6 +143,4 @@ EMAIL_HOST_PASSWORD = 'qfzwkejcqonlztea'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-import os
-STATICFILES_DIRS = = os.path.join(BASE_DIR, "static"),
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
+
